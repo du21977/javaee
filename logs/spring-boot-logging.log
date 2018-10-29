@@ -1,0 +1,21 @@
+2018-10-29 16:03:59.597  INFO 35236 --- [main] com.dobi.MainApp                         : Starting MainApp on PC201710081627 with PID 35236 (D:\javaee\myproject\heima\pro\javaee\out\production\classes started by Administrator in D:\javaee\myproject\heima\pro\javaee)
+2018-10-29 16:03:59.680  INFO 35236 --- [main] com.dobi.MainApp                         : No active profile set, falling back to default profiles: default
+2018-10-29 16:04:00.980  INFO 35236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-29 16:04:00.981  INFO 35236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-10-29 16:04:01.071  INFO 35236 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-29 16:04:01.692  INFO 35236 --- [main] com.dobi.MainApp                         : Started MainApp in 2.581 seconds (JVM running for 3.317)
+2018-10-29 16:04:18.839  INFO 35236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-29 16:04:50.363  INFO 35432 --- [main] com.dobi.MainApp                         : Starting MainApp on PC201710081627 with PID 35432 (D:\javaee\myproject\heima\pro\javaee\out\production\classes started by Administrator in D:\javaee\myproject\heima\pro\javaee)
+2018-10-29 16:04:50.369  INFO 35432 --- [main] com.dobi.MainApp                         : No active profile set, falling back to default profiles: default
+2018-10-29 16:04:51.766  INFO 35432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-29 16:04:51.767  INFO 35432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-10-29 16:04:51.874  INFO 35432 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-29 16:04:52.465  INFO 35432 --- [main] com.dobi.MainApp                         : Started MainApp in 2.513 seconds (JVM running for 3.237)
+2018-10-29 16:05:06.820  INFO 35432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-29 16:06:47.617  INFO 34892 --- [main] com.dobi.MainApp                         : Starting MainApp on PC201710081627 with PID 34892 (D:\javaee\myproject\heima\pro\javaee\out\production\classes started by Administrator in D:\javaee\myproject\heima\pro\javaee)
+2018-10-29 16:06:47.620  INFO 34892 --- [main] com.dobi.MainApp                         : No active profile set, falling back to default profiles: default
+2018-10-29 16:06:48.919  INFO 34892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-29 16:06:48.920  INFO 34892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-10-29 16:06:49.019  INFO 34892 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-29 16:06:49.651  INFO 34892 --- [main] com.dobi.MainApp                         : Started MainApp in 2.543 seconds (JVM running for 3.264)
+2018-10-29 16:06:51.873  INFO 34892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
