@@ -1,0 +1,5 @@
+
+http1.1相比http1.0引入了长连接，connection----keep-alive
+就是每次请求不用每次都三次握手了
+
+

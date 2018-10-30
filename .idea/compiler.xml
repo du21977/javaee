@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="httpDemo_main" target="1.8" />
+      <module name="httpDemo_test" target="1.8" />
       <module name="javaee_main" target="1.8" />
       <module name="javaee_test" target="1.8" />
     </bytecodeTargetLevel>

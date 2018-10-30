@@ -75,6 +75,12 @@ public class StudentController {
     }
 
 
+    /**
+     * 改操作
+     * @param id
+     * @param age
+     * @return
+     */
     @RequestMapping("/student/update")
     public String update(String id ,int age){
         try {
@@ -103,5 +109,25 @@ public class StudentController {
             e.printStackTrace();
         }
         return "更新成功";
+    }
+
+
+    @RequestMapping("/student/findall")
+    public String update(){
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("stu.txt"));
+
+            String line =null;
+            StringBuilder stringBuilder = new StringBuilder();
+            while ((line=br.readLine())!=null){
+                stringBuilder.append(line+"\r\n");
+
+            }
+            System.out.println("all--\r\n"+stringBuilder);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "查询成功";
     }
 }
