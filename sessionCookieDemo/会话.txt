@@ -17,5 +17,17 @@ session:
     cookie是存在客户端，session是存在服务器端
 
 
+如果cookie里面有sessionID,那么这个getSession方法就会跟着这个id去找到session的内存空间，然后返回那个内存空间
+
+ HttpSession session = request.getSession();
+//1.获取session session其实就是内存中的一块区域
+        //只要有这句话，就是说只要产生了session空间，服务器就会自动把sessionid加到cookie中去
+        //session自动失效时间默认为30分钟
+
+sesson何时创建：第一次request.getSession()的时候
+session何时销毁：默认超时30分钟就销毁，
+                手动调用invilidate，让空间失效也销毁(退出登录)
+
+session的失效时间是session不活动开始计算的，如果一直活动，就不会过期，该session不访问就开始计时，访问计时清零
 
 
