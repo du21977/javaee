@@ -1,0 +1,21 @@
+
+cookie:
+服务器：
+    1.构建cookie
+    2.存数据到cookie
+    3.返回cookie
+客户端：
+    访问服务器时，会携带上次服务器返回过来的cookie信息
+
+cookie的问题：
+    cookie存放在客户端，会存在安全问题
+    cookie的大小有限制，一般不会超过20个
+
+
+session:
+    session是基于cookie的一种会话机制，是服务器的一块内存空间，用来存储数据
+    cookie是存在客户端，session是存在服务器端
+
+
+
+

@@ -17,6 +17,7 @@ get请求
     Connection-Keep-alive:保持长连接
     Cache-Control:缓存
     If-Modified-Since:修改时间
+    Cookie:第一次没有，服务器返回之后才有，后面要自动带过去
 请求体：
     由于数据拼接到了地址中，所以get请求的请求体为空
 
@@ -27,6 +28,7 @@ get请求
        Last-Modified:最后修改时间
        Content-Type:服务器返回的数据类型
        Content-Lenght:数据长度
+       Set-Cookie:设置cookie
 
 响应体：   服务器返回的数据
 
@@ -49,6 +51,7 @@ post请求
     //下面好像跟get不同---post请求传输数据是以流的形式写的，所以下面两个表示传输的数据长度
     Content-Type:内容类型，表示提交上去的数据的内型
     Content-length:内容长度
+     Cookie:第一次没有，服务器返回之后才有，后面要自动带过去
 请求体：
     请求的数据在请求体中
 
@@ -59,6 +62,7 @@ post请求
        Last-Modified:最后修改时间
        Content-Type:服务器返回的数据类型
        Content-Lenght:数据长度
+       Set-Cookie:设置cookie
 
 响应体：   服务器返回的数据
 

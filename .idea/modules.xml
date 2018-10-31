@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaee.iml" filepath="$PROJECT_DIR$/.idea/modules/javaee.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaee_main.iml" filepath="$PROJECT_DIR$/.idea/modules/javaee_main.iml" group="javaee" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/javaee_test.iml" filepath="$PROJECT_DIR$/.idea/modules/javaee_test.iml" group="javaee" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sessionCookieDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/sessionCookieDemo.iml" group="sessionCookieDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sessionCookieDemo/sessionCookieDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sessionCookieDemo/sessionCookieDemo_main.iml" group="sessionCookieDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sessionCookieDemo/sessionCookieDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sessionCookieDemo/sessionCookieDemo_test.iml" group="sessionCookieDemo" />
     </modules>
   </component>
 </project>
