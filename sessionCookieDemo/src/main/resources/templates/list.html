@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>商品列表</h2>
+
+    <table>
+
+        <thead>
+            <td width="100px">编号</td>
+            <td width="100px">名称</td>
+            <td width="100px">价格</td>
+            <td width="100px">操作</td>
+        </thead>
+
+        <tbody>
+
+       <!-- th:each="p:${list}" : 表示遍历list集合，
+        遍历出来的每一个元素，都用p去接收， 其实p就是商品对象
+
+
+
+            如果现在的链接地址，是原有的固定字符串   +   动态变化的model数据，那么应该如何取值。
+
+            addToCart?id=1  ===== 1 是动态取值出来的。
+
+        -->
+
+
+
+            <tr th:each="p:${list}">
+                <td th:text="${p.id}">1</td>
+                <td th:text="${p.name}">小米99</td>
+                <td th:text="${p.price}">1999</td>
+
+                <td><a th:href="@{addToCart(id=${p.id})}">加入购物车</a></td>
+                <!--<td><a th:href="@{addToCart(id=${p.id},name=${p.name})}">加入购物车</a></td>-->
+
+                <!--th:href="@{/product/comments(prodId=${prod.id})}"
+
+
+                addToCart?id=1&name=aaa&age=123123
+                th:href="@{addToCart(id=${p.id})}"-->
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>

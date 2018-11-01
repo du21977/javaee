@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8"/>
+    <title>购物车</title>
+</head>
+<body>
+
+
+    <table>
+
+        <thead>
+            <td width="100px">编号</td>
+            <td width="100px">名称</td>
+            <td width="100px">价格</td>
+            <td width="100px">数量</td>
+            <td width="100px">小计</td>
+        </thead>
+
+        <tbody>
+
+            <!--这里遍历map其实遍历出来的每一个元素就是一个entry对象，一个entry就包含 一个key 和 一个value
+
+                如果想做总计的话，需要构建出来购物车的bean
+
+                public class Cart{
+
+                    private double totle
+                    private Map<Product , Integer> map;
+
+
+                }
+
+            -->
+
+            <tr th:each="entry:${session.cartMap}">
+                <td th:text="${entry.key.id}">1</td>
+                <td th:text="${entry.key.name}">2</td>
+                <td th:text="${entry.key.price}">3</td>
+                <td th:text="${entry.value}">3</td>
+                <td th:text="${entry.key.price * entry.value}">4</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>
