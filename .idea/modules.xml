@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FilterDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/FilterDemo.iml" group="FilterDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FilterDemo/FilterDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FilterDemo/FilterDemo_main.iml" group="FilterDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FilterDemo/FilterDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FilterDemo/FilterDemo_test.iml" group="FilterDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo.iml" group="JsonDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_main.iml" group="JsonDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_test.iml" group="JsonDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" group="RestFulDemo" />
