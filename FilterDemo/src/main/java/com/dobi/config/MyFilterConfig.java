@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /*
  *  自定义过滤器顺序
  */
-@Configuration
+//@Configuration
 public class MyFilterConfig {
     private static final String TAG = "MyFilterConfig";
 
@@ -29,7 +29,7 @@ public class MyFilterConfig {
         bean02.setFilter(new FilterDemo02());
 
         //要过滤什么地址
-        bean02.addUrlPatterns("/index.html");
+        bean02.addUrlPatterns("/index11.html");
 
         //它的顺序是怎样？
         bean02.setOrder(22);
@@ -48,7 +48,7 @@ public class MyFilterConfig {
         bean04.setFilter(new FilterDemo04());
 
         //要过滤什么地址
-        bean04.addUrlPatterns("/index.html");
+        bean04.addUrlPatterns("/index11.html");
 
         //它的顺序是怎样？  谁的数字越小， 谁就排在前面。
         bean04.setOrder(4);

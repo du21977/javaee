@@ -11,8 +11,8 @@ import java.io.IOException;
  */
 
 
-@WebFilter("/*")
-@Component
+//@WebFilter("/*")
+//@Component
 public class FilterDemo02 implements Filter {
     private static final String TAG = "FilterDemo02";
 

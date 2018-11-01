@@ -9,8 +9,8 @@ import java.io.IOException;
 /*
  *测试过滤器链
  */
-@WebFilter("/*")
-@Component
+//@WebFilter("/*")
+//@Component
 public class FilterDemo04 implements Filter {
     private static final String TAG = "FilterDemo04";
 
