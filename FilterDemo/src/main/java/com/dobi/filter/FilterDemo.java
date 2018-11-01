@@ -37,7 +37,7 @@ public class FilterDemo  implements Filter{
             chain.doFilter(request,response);
         }
 
-        //controller
+        //com.dobi.controller
         if(requestURI.contains("filtertest")){
             chain.doFilter(request,response);
         }

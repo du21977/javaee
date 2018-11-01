@@ -24,7 +24,7 @@ public class FilterDemo04 implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         System.out.println("FilterDemo04: doFilter~1111!");
 
-        //放行：如果后面还有过滤器，那么会执行过滤器， 如果都没有，会执行目标资源 controller | html
+        //放行：如果后面还有过滤器，那么会执行过滤器， 如果都没有，会执行目标资源 com.dobi.controller | html
        chain.doFilter(request ,response);
 
         System.out.println("FilterDemo04: doFilter~2222!");

@@ -14,7 +14,7 @@ import java.util.*;
 
 /*
  *  @项目名：  day03 
- *  @包名：    com.itheima.controller
+ *  @包名：    com.itheima.com.dobi.controller
  *  @文件名:   ProductController
  *  @创建者:   xiaomi
  *  @创建时间:  2018/6/2 11:56

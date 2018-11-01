@@ -1,4 +1,5 @@
 rootProject.name = 'javaee'
 include 'sessionCookieDemo'
 include 'FilterDemo'
+include 'RestFulDemo'
 
