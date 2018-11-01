@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FilterDemo" />
             <option value="$PROJECT_DIR$/sessionCookieDemo" />
           </set>
         </option>

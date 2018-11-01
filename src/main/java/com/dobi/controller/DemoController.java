@@ -1,4 +1,4 @@
-package com.dobi;
+package com.dobi.controller;
 
 import com.dobi.bean.User;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 //1.表示这个类是一个控制器，需要打上注解
+//打上这个类，那么Spring就会管理这个类，，会创建这个类的实例
 @RestController
 public class DemoController {
 

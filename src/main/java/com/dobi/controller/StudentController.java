@@ -1,4 +1,4 @@
-package com.dobi;
+package com.dobi.controller;
 
 import com.dobi.bean.Student;
 import org.springframework.web.bind.annotation.RequestMapping;
