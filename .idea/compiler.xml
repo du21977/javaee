@@ -14,6 +14,8 @@
       <module name="JqueryDemo_test" target="1.8" />
       <module name="JsonDemo_main" target="1.8" />
       <module name="JsonDemo_test" target="1.8" />
+      <module name="MySqlDemo_main" target="1.8" />
+      <module name="MySqlDemo_test" target="1.8" />
       <module name="RestFulDemo_main" target="1.8" />
       <module name="RestFulDemo_test" target="1.8" />
       <module name="sessionCookieDemo_main" target="1.8" />

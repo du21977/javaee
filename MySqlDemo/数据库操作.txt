@@ -1,0 +1,70 @@
+
+MySql数据库
+命令行操作
+mysql -u -root -p
+进入，会让你输入密码
+
+退出：exit
+
+--------------------------------数据库操作---------------------------------
+//创建数据库
+create database xxx;
+//显示数据库
+show databases;
+//删除数据库
+drop database xxx;
+//修改数据库编码
+alter database xxx character set utf8;
+//显示某个数据库的编码
+show create database xxx;
+------------------------------表字段--------------------------------
+字段介绍：
+java字段对应mysql字段
+ int----->  int
+ float---->float
+ double---->double
+ char/string-------char(固定)/varchar(可变，大部分用这个)
+ Date------>date(日期)/time(时间)/datatime(日期和时间)/timestamp(传null会自动补全当前时间)
+ 文件类型---->TEXT(文本)/BLOB二进制类型
+
+-----------------------------数据库表操作----------------------------------
+数据库表：
+////////////////表的新建//////////////////
+建表：
+create table stu(id int, name varchar(20), age int);
+////////////////表的查询//////////////////
+显示表：
+show tables
+查看表的结构--表里面有什么字段，能存什么值
+desc xxx;
+显示建表语句
+show create table xxx;
+////////////////表的删除//////////////////
+删除表---表没了
+drop table xxx;
+删除表中的数据，表还在,新增数据主键id不会从1开始
+delete from xxx;
+删除表中的数据，表还在,新增数据主键id从1开始
+truncate table xxx;
+////////////////表的修改--包括字段//////////////////
+修改表名
+rename table 表名 to 新表名;
+给表添加一个字段
+alter table xxx add phone varchar(11);
+修改字段的名字
+alter table xxx change 旧字段 新字段 类型;
+删除某个字段
+alter table xxx drop 字段;
+给某个字段添加约束
+alter table xxx modify 字段 类型 not null;
+
+
+--------------------------------------约束介绍---------------------------------
+/////////////////////主键/////////////////////////////////
+主键约束primary key：主键必须唯一，不能为空，可以设置为自增长
+建表的时候就创建
+create table xxx(id int primary key auto_increment ,name varchar(20));
+后面修改
+alter table xxx modify id int primary key;
+还可以继续修改
+alter table xxx modify id int auto_increment;

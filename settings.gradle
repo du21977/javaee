@@ -6,4 +6,5 @@ include 'JsonDemo'
 include 'AjaxDemo'
 include 'JqueryDemo'
 include 'XmlDemo'
+include 'MySqlDemo'
 
