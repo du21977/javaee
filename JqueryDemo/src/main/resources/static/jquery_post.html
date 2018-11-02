@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript">
+
+        function post() {
+
+            //1. 直接发起请求
+            //$.get();
+            //$.post("jqueryPost");
+
+
+            //2. 发起请求，携带参数
+            //参数一：请求地址，参数二：携带的参数，这个参数是json格式
+            //{key1:value1 , key2:value2} , key可以使用双引，也可以不用。
+            //$.post("jqueryPost",{"username":"admin8", password:"123"})
+
+
+            //3. 发起请求，携带参数，获取结果
+            //参数一、请求地址，参数二：携带的数据，参数三：回调函数
+            $.post("jqueryPost",{username:"aobama",password:"456"},function(data){
+                alert("data="+data);
+            })
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <a href="javascript:post()">使用JQuery发起post请求</a>
+
+</body>
+</html>

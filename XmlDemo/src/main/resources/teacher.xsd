@@ -1,0 +1,27 @@
+<!-- xmlns  :  xml namespace : 名称空间 /  命名空间
+	targetNamespace :  目标名称空间 。 下面定义的那些元素都与这个名称空间绑定上。
+	elementFormDefault ： 元素的格式化情况 如果使用的时候有声明命名空间，那么标签页必须有命名空前前缀-->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.itheima.com/teacher"
+        elementFormDefault="qualified">
+
+    <element name="teachers">
+        <complexType>
+            <!-- 表示teachers下面的这个 teacher 出现个数不限。-->
+            <sequence maxOccurs="unbounded">
+                <!-- 这是一个复杂元素 -->
+                <element name="teacher">
+                    <complexType>
+
+                        <sequence>
+                            <!-- 以下两个是简单元素 -->
+                            <element name="name" type="string"></element>
+                            <element name="age" type="int"></element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

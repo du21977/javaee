@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript">
+        function get(){
+
+            //1. 发起请求~
+            //$.get("jqueryGet");
+
+
+            //2. 发起请求，并且携带参数
+            //$.get("jqueryGet?username=admin&password=123")
+
+            //3. 发起请求，携带参数，并且获取返回值
+            var url = "jqueryGet?username=admin&password=123";
+
+            //参数一： 请求地址， 参数二： 请求的时候，回调函数。
+            //function里面的参数一data:服务器返回的记过 ，
+            // /参数二 status：请求的成功或者失败的状态 , 这个其实几乎不会用。所以可以不写。
+            $.get(url ,function(data,status){
+
+                alert("data="+data);
+//                alert("data="+data +" --- status="+status)
+
+            })
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <a href="javascript:get()">使用JQuery发起get请求</a>
+
+</body>
+</html>

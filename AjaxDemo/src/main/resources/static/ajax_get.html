@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用ajax发起get请求</title>
+
+    <script type="text/javascript">
+//        固有写法
+        function ajaxFunction(){
+            var xmlHttp;
+            try{ // Firefox, Opera 8.0+, Safari
+                xmlHttp=new XMLHttpRequest();
+            }catch (e){
+                try{// Internet Explorer
+                    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+                }catch (e){
+                    try{
+                        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    catch (e){}
+                }
+            }
+            return xmlHttp;
+        }
+
+        //ajax三部曲
+        function get(){
+            alert("get~!~!")
+
+            //1.,获取对象
+            var http = ajaxFunction();
+
+            //2. 准备请求  参数一： 执行get请求 ，参数二：请求的地址(在Controller中) ，参数三：true:执行异步请求
+            http.open("GET","ajaxGet",true);
+
+            //3. 发送请求
+            http.send();
+        }
+
+    </script>
+</head>
+<body>
+
+    href ： 还是会刷新整个画面。
+    <a href="#" onclick="get()" >使用Ajax发起get请求</a><br>
+
+
+    <a href="javascript:void(0)" onclick="get()" >使用Ajax发起get请求</a><br>
+
+
+    不要走原来刷新的路线， 直接执行一个javascript的方法。
+    <a href="javascript:get()" >使用Ajax发起get请求222</a>
+
+</body>
+</html>

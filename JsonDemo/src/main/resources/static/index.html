@@ -4,39 +4,74 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 
     <script type="text/javascript">
 
+        //1. 发起请求去获取省份的数据。 入口函数 ： 页面加载完毕就执行。
 
-        //1. 对象类型 --->  最简单   看见大括号就是看见对象了，
-        //对象.属性
-        var user ={
-            "username":"admin",
-            "password":"123"
-        };
+        $(function(){
 
-        alert(user.username + " = "+ user.password);
+            $.get("listProvince" , function(data){
 
-        //2. 数组类型 ，里面装的是简单的元素
-        var array = ["aa","bb","cc","dd"];
-        alert(array[0])
+                //data:其实就是一个json的集合数据，集合里面装的是 province对象
+
+                //遍历这个集合，遍历一次会执行一次function， 里面的i : 表示遍历的下标， n: 遍历出来的每一个元素
+                //在当前的场景下，它就是province对象
+                $(data).each(function(i , n ){
+                   // alert("n="+n.name);
+
+                    //遍历好了之后，就要往省份的下拉框追加。所以要先找到它
+                    $("#province").append(" <option value='"+n.id+"'>"+n.name+"</option>");
+
+                });
 
 
-        //3. 数组类型。，里面装的是对象
-        var stus = [
-            {"name":"zhangsan1","age":18},
-            {"name":"zhangsan2","age":28},
-            {"name":"zhangsan3","age":38},
-        ]
-        
-        alert(stus[1].name)
+            })
+        })
+
+
+
+        //只要改变了省份的数据，那么就会执行这个方法。
+        function changeProvince(){
+
+            //必须得知道，现在选中什么省份。
+           var id =  $("#province").val();
+
+           //发送请求
+            $.post("listCity",{"id":id} ,function(data){
+
+                //alert("data="+data);
+
+                //追加之前，先清空内容
+                $("#city").html("<option>--请选择--</option>");
+
+                $(data).each(function(i , n){
+
+                    $("#city").append(" <option value='"+n.id+"'>"+n.name+"</option>");
+                });
+            });
+        }
+
 
     </script>
-
 
 </head>
 <body>
 
+    省份:
+    <select id="province" onchange="changeProvince()">
+        <option value="">--请选择--</option>
+        <!--<option value="1">广东</option>
+        <option value="2">湖北</option>
+        <option value="3">-湖南-</option>
+        <option value="4">-广西&#45;&#45;</option>-->
+    </select>
+
+    城市:
+    <select id="city">
+        <option>--请选择--</option>
+    </select>
 
 </body>
 </html>

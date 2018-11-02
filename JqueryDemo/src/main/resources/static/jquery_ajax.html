@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+    <script type="text/javascript">
+
+        function myAjax() {
+
+           // $.post("dizhi")
+
+            $.ajax({
+               /* key1:value1,
+                key2:value2,*/
+                url:"jqueryPost",
+                data:{"username":"admin8",password:"123"},
+                success:function(data){
+                    alert("data====="+data);
+                }
+            });
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <a href="javascript:myAjax()">使用JQuery发起ajax请求</a>
+
+</body>
+</html>

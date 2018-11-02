@@ -3,4 +3,7 @@ include 'sessionCookieDemo'
 include 'FilterDemo'
 include 'RestFulDemo'
 include 'JsonDemo'
+include 'AjaxDemo'
+include 'JqueryDemo'
+include 'XmlDemo'
 

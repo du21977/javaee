@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<stus>
+
+    <stu no="33">
+        <id>3</id>
+        <name>奥巴马</name>
+        <age>60</age>
+    </stu>
+
+    <stu no="44">
+        <id>4</id>
+        <name>特朗普</name>
+        <age>70</age>
+    </stu>
+
+</stus>

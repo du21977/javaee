@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+
+        function verifyUsernName(){
+
+            //1. 获取文本框的内容  val() 括号没有内容，就是取值， val("234234") 这就是赋值
+            var user = $("#username").val();
+
+            //2. 发起请求 , 并且获取结果
+            $.post( "checkUserName", {"username":user}, function(data){
+
+                if("use" == data) { //表示用了
+
+                    $("#result").html("<font color='red'>用户名已被占用22！</font>")
+
+                }else{ //这个用户名还没有人用。
+                    $("#result").html("<font color='green'>用户名可用22！</font>")
+                }
+            } )
+
+            //3. 放置内容。
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+
+    <form>
+
+        用户名:<input type="text" id="username" name="username" onblur="verifyUsernName()"/><span id="result"></span><br><br>
+        密 码：<input type="password" name="password"/><br><br>
+        <input type="submit" value="注册"/><br><br>
+
+    </form>
+
+</body>
+</html>

@@ -2,18 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="AjaxDemo_main" target="1.8" />
+      <module name="AjaxDemo_test" target="1.8" />
       <module name="FilterDemo_main" target="1.8" />
       <module name="FilterDemo_test" target="1.8" />
       <module name="httpDemo_main" target="1.8" />
       <module name="httpDemo_test" target="1.8" />
       <module name="javaee_main" target="1.8" />
       <module name="javaee_test" target="1.8" />
+      <module name="JqueryDemo_main" target="1.8" />
+      <module name="JqueryDemo_test" target="1.8" />
       <module name="JsonDemo_main" target="1.8" />
       <module name="JsonDemo_test" target="1.8" />
       <module name="RestFulDemo_main" target="1.8" />
       <module name="RestFulDemo_test" target="1.8" />
       <module name="sessionCookieDemo_main" target="1.8" />
       <module name="sessionCookieDemo_test" target="1.8" />
+      <module name="XmlDemo_main" target="1.8" />
+      <module name="XmlDemo_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

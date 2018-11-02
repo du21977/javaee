@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AjaxDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/AjaxDemo.iml" group="AjaxDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AjaxDemo/AjaxDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/AjaxDemo/AjaxDemo_main.iml" group="AjaxDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AjaxDemo/AjaxDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/AjaxDemo/AjaxDemo_test.iml" group="AjaxDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FilterDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/FilterDemo.iml" group="FilterDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FilterDemo/FilterDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FilterDemo/FilterDemo_main.iml" group="FilterDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FilterDemo/FilterDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FilterDemo/FilterDemo_test.iml" group="FilterDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JqueryDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/JqueryDemo.iml" group="JqueryDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JqueryDemo/JqueryDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JqueryDemo/JqueryDemo_main.iml" group="JqueryDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JqueryDemo/JqueryDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JqueryDemo/JqueryDemo_test.iml" group="JqueryDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo.iml" group="JsonDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_main.iml" group="JsonDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_test.iml" group="JsonDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" group="RestFulDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/XmlDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/XmlDemo.iml" group="XmlDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/XmlDemo/XmlDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/XmlDemo/XmlDemo_main.iml" group="XmlDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/XmlDemo/XmlDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/XmlDemo/XmlDemo_test.iml" group="XmlDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/httpDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/httpDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/httpDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/httpDemo_main.iml" group="httpDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/httpDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/httpDemo_test.iml" group="httpDemo" />

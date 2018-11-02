@@ -9,9 +9,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AjaxDemo" />
             <option value="$PROJECT_DIR$/FilterDemo" />
+            <option value="$PROJECT_DIR$/JqueryDemo" />
             <option value="$PROJECT_DIR$/JsonDemo" />
             <option value="$PROJECT_DIR$/RestFulDemo" />
+            <option value="$PROJECT_DIR$/XmlDemo" />
             <option value="$PROJECT_DIR$/sessionCookieDemo" />
           </set>
         </option>
