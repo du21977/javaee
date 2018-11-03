@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<c3p0-config>
+    <default-config>
+
+        <!--配置数据库连接的信息-->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql:///student</property>
+        <property name="user">root</property>
+        <property name="password">root</property>
+
+
+        <!--初始化连接数-->
+        <property name="initialPoolSize">10</property>
+
+        <!--最大空闲时间，如果超过了这个空闲时间，就重置连接对象-->
+        <property name="maxIdleTime">30</property>
+
+        <!--最大连接数-->
+        <property name="maxPoolSize">100</property>
+
+        <!--最小连接数-->
+        <property name="minPoolSize">10</property>
+
+        <!--最大执行的statement语句-->
+        <property name="maxStatements">200</property>
+    </default-config>
+
+</c3p0-config>
