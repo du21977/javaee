@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
     <!--要想让spring帮忙创建谁的实例，就在这里写一个bean标签-->
@@ -11,12 +12,82 @@
 
         bean标签： 是用来告诉spring要创建什么类的实例，这个标签可以写很多个
         class : 表示要创建哪个类的实例，这里要写类的全路径  包名.类名
-        id |  name :唯一标识符 其实就是给这个实例起一个别名 有点类似map集合的key一样。 以后我们拿着这个别名就能获取到这个类的实例。
+        id |  name :唯一标识符,不能重复 其实就是给这个实例起一个别名 有点类似map集合的key一样。 以后我们拿着这个别名就能获取到这个类的实例。
 
         默认情况下spring生成的实例是单例的。如果想要做成多例：
             scope="prototype"
     -->
-    <bean id="us"  class="com.dobi.service.impl.UserServiceImpl" scope="prototype"></bean>
+    <!--xml的IOC控制反转-->
+    <bean id="us"  class="com.dobi.service.impl.UserServiceImpl" scope="singleton"></bean>
 
 
+    <!--注解的IOC，扫描该包下所有类含有相应注解的类,然后创建实例-->
+    <context:component-scan base-package="com.dobi.service.impl"></context:component-scan>
+
+    <!--xml的DI依赖注入，有参构造方式-->
+    <bean id="us_DI"  class="com.dobi.service.impl.UserServiceImplDI01" scope="singleton">
+        <!--通过这行配置，可以让Spring匹配有参构造，name:构造参数名称 value:要赋的值-->
+        <constructor-arg name="address" value="广州"></constructor-arg>
+    </bean>
+
+    <!--xml的DI依赖注入，set方式-->
+    <bean id="us_DI_set"  class="com.dobi.service.impl.UserServiceImplDI02" scope="singleton">
+        <!--通过这行配置，可以让Spring匹配set，name:参数名称 value:要赋的值-->
+        <property name="address" value="番禺"></property>
+    </bean>
+
+    <!--xml的DI依赖注入，set方式，赋值array数组-->
+    <bean id="us_DI_set_array"  class="com.dobi.service.impl.UserServiceImplDI03" scope="singleton">
+        <!--通过这行配置，可以让Spring匹配set，name:参数名称 value:要赋的值-->
+        <property name="address" >
+            <array>
+                <value>深圳</value>
+                <value>北京</value>
+                <value>上海</value>
+                <value>广州</value>
+            </array>
+
+        </property>
+    </bean>
+
+    <!--xml的DI依赖注入，set方式，赋值list-->
+    <bean id="us_DI_set_list"  class="com.dobi.service.impl.UserServiceImplDI04" scope="singleton">
+        <!--通过这行配置，可以让Spring匹配set，name:参数名称 value:要赋的值-->
+        <property name="address" >
+            <list>
+                <value>深圳1</value>
+                <value>北京1</value>
+                <value>上海1</value>
+                <value>广州1</value>
+            </list>
+
+        </property>
+    </bean>
+
+    <!--xml的DI依赖注入，set方式，赋值map-->
+    <bean id="us_DI_set_map"  class="com.dobi.service.impl.UserServiceImplDI05" scope="singleton">
+        <!--通过这行配置，可以让Spring匹配set，name:参数名称 value:要赋的值-->
+        <property name="address" >
+            <map>
+                <!--<entry>-->
+                    <!--<key></key>-->
+                    <!--<value></value>-->
+                <!--</entry>-->
+
+                <entry key="地址1" value="beijing"/>
+                <entry key="地址2" value="shanghai"/>
+                <entry key="地址3" value="guangzhou"/>
+            </map>
+
+        </property>
+    </bean>
+
+    <!--对象类型的set注入，开发中最多的就是这种-->
+    <bean id="userDaoImpl" class="com.dobi.dao.impl.UserDaoImpl"></bean>
+    <bean id="us_DI_set_object"  class="com.dobi.service.impl.UserServiceImplDI06" scope="singleton">
+
+        <!--ref对象，userDaoImpl在上面已经实例化了-->
+        <property name="userDao" ref="userDaoImpl"></property>
+
+    </bean>
 </beans>
