@@ -22,7 +22,7 @@
 
 
     <!--注解的IOC，扫描该包下所有类含有相应注解的类,然后创建实例-->
-    <context:component-scan base-package="com.dobi.service.impl"></context:component-scan>
+    <context:component-scan base-package="com.dobi"></context:component-scan>
 
     <!--xml的DI依赖注入，有参构造方式-->
     <bean id="us_DI"  class="com.dobi.service.impl.UserServiceImplDI01" scope="singleton">
@@ -90,4 +90,8 @@
         <property name="userDao" ref="userDaoImpl"></property>
 
     </bean>
+
+
+
+
 </beans>
