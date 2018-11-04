@@ -32,6 +32,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sessionCookieDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/sessionCookieDemo.iml" group="sessionCookieDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sessionCookieDemo/sessionCookieDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sessionCookieDemo/sessionCookieDemo_main.iml" group="sessionCookieDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sessionCookieDemo/sessionCookieDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sessionCookieDemo/sessionCookieDemo_test.iml" group="sessionCookieDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/springDemo.iml" group="springDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springDemo/springDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/springDemo/springDemo_main.iml" group="springDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springDemo/springDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/springDemo/springDemo_test.iml" group="springDemo" />
     </modules>
   </component>
 </project>

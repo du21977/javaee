@@ -7,4 +7,5 @@ include 'AjaxDemo'
 include 'JqueryDemo'
 include 'XmlDemo'
 include 'MySqlDemo'
+include 'springDemo'
 

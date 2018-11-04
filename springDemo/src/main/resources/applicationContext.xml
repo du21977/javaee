@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--要想让spring帮忙创建谁的实例，就在这里写一个bean标签-->
+
+
+    <!--
+
+        bean标签： 是用来告诉spring要创建什么类的实例，这个标签可以写很多个
+        class : 表示要创建哪个类的实例，这里要写类的全路径  包名.类名
+        id |  name :唯一标识符 其实就是给这个实例起一个别名 有点类似map集合的key一样。 以后我们拿着这个别名就能获取到这个类的实例。
+
+        默认情况下spring生成的实例是单例的。如果想要做成多例：
+            scope="prototype"
+    -->
+    <bean id="us"  class="com.dobi.service.impl.UserServiceImpl" scope="prototype"></bean>
+
+
+</beans>

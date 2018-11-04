@@ -26,6 +26,9 @@ dependencies {
     // https://mvnrepository.com/artifact/commons-dbutils/commons-dbutils
     compile group: 'commons-dbutils', name: 'commons-dbutils', version: '1.6'
 
+    //Spring的依赖
+    compile 'org.springframework:spring-context:4.3.17.RELEASE'
+
 }
 
 //打jar包--右侧gradle-->Tasks-->other-->release双击

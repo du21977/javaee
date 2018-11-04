@@ -1,0 +1,43 @@
+
+早期创建对象是直接new对象
+UserService us = new UserService();
+
+后面使用接口：
+UserService us = new UserServiceImpl();
+us.save();
+UserService us = new UserServiceImpl02();
+这样后面出现任何新技术，我们只需要实现接口，在实现类中使用新技术
+如开始使用jdbc，后面使用herbenate,再后来使用mybatis，这样接口类不变，只需要变实现类，扩展性更好
+使用接口的好处：
+1.利用多态的思想
+2.接口声明，实现类实现，这样声明和实现分离
+
+
+
+再到后来：
+出现一个问题
+在一个项目中有100个类中出现了10000个new UserServiceImpl(),但是我们要换新的实现类，
+所以我们必须把这10000个地方给换成UserServiceImpl02,如何解决这个问题
+于是乎出现了工厂
+public class BeanFactory{
+    public Object getBean(String name){
+        if(name.equals("xx"))
+            return new UserServiceImp();    //后面想换实现类，该这一处地方就好了
+            //return new UserServiceImp02();
+        else if(name.equals("xx1"))
+            return new OrderServiceImp();
+
+    }
+}
+
+工厂方法有点不好，每增加一种实例对象，就增加一组else if,得改代码
+后面Spring 就结合xml文件来做，以后只需要改配置文件就好了
+applicationContext.xml
+<beans>
+    <bean id ="us" class="类全路径">
+    <bean id ="os" class="类全路径">
+    ...
+</beans>
+后面只需要在工厂类中解析xml文件，找到类的全路径，Class.forName("类全路径").newInstance来实例化对象即可
+
+
