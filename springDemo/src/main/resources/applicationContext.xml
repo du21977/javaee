@@ -2,7 +2,8 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
     <!--要想让spring帮忙创建谁的实例，就在这里写一个bean标签-->
@@ -91,7 +92,57 @@
 
     </bean>
 
+<!--&5;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--下面是AOP喽-->
+    <!--1. 要托管扩展类和被扩展类-->
+    <bean id="us_aop" class="com.dobi.proxy.service.impl.UserServiceImpl"></bean>
+    <bean id="logger" class="com.dobi.proxy.util.Logger"></bean>
+
+    <!--2. 开始配置aop
+        在执行UserServiceImpl的save方法的时候，先执行Logger.log()
+    -->
 
 
+    <aop:config>
+
+        <!--表示一下，谁想被扩展啊  save
+
+            execution(* com.xyz.myapp.service.*.*(..))
+            execution : 固定写法
+            第一个* ： 表示任意返回值
+            com.xyz.myapp.service ：表示包
+            第二个* ：表示包下的任意类
+            第三个* ： 表示类种的任意方法
+            (..) : 任意参数
+              -->
+        <aop:pointcut id="aa" expression="execution(* com.dobi.proxy.service.impl.*.*(..))"></aop:pointcut>
+
+        <!--
+                根据aa的这个表达式会找到一堆方法（也有可能是一个方法） ，找到之后，给他们做前置增强，
+                增强的功能是logger这个类当中的log方法-->
+
+        <aop:aspect ref="logger">
+
+            <!--前置增强-->
+            <!--<aop:before method="log"   pointcut-ref="aa"></aop:before>-->
+
+
+            <!--最终增强-->
+            <!--<aop:after method="log" pointcut-ref="aa"></aop:after>-->
+
+            <!--后置增强-->
+            <!-- <aop:after-returning method="log" pointcut-ref="aa"></aop:after-returning>-->
+
+            <!--<aop:before method="log"   pointcut-ref="aa"></aop:before>
+            <aop:after method="log" pointcut-ref="aa"></aop:after>-->
+
+            <!--环绕增强-->
+            <aop:around method="around" pointcut-ref="aa"></aop:around>
+
+            <!--<aop:after-throwing method="log" pointcut-ref="aa"></aop:after-throwing>-->
+
+        </aop:aspect>
+
+    </aop:config>
 
 </beans>

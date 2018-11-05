@@ -13,4 +13,8 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     //Spring的依赖
     compile 'org.springframework:spring-context:4.3.17.RELEASE'
+    //cglib动态代理
+    compile group: 'cglib', name: 'cglib', version: '2.2.2'
+    //AOP
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.10'
 }

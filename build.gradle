@@ -30,6 +30,9 @@ dependencies {
     //Spring的依赖
     compile 'org.springframework:spring-context:4.3.17.RELEASE'
 
+    //cglib动态代理
+    compile group: 'cglib', name: 'cglib', version: '2.2.2'
+
 }
 
 //打jar包--右侧gradle-->Tasks-->other-->release双击
