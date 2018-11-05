@@ -2,6 +2,9 @@ package com.dobi.dao.impl;
 
 import com.dobi.dao.UserDao;
 
+/**
+ * 这个是使用xml实例化
+ */
 public class UserDaoImpl implements UserDao {
 
     @Override
