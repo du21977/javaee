@@ -1,15 +1,10 @@
 package com.dobi.allannotation;
 
 import com.dobi.allannotation.config.JdbcConfig;
-import com.dobi.proxy.service.impl.UserServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.SQLException;
 
 /**
  * debug测试纯注解

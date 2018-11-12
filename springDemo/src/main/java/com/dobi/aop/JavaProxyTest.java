@@ -1,10 +1,10 @@
-package com.dobi.proxy;
+package com.dobi.aop;
 
 
 
-import com.dobi.proxy.service.UserService;
-import com.dobi.proxy.service.impl.UserServiceImpl;
-import com.dobi.proxy.util.Logger;
+import com.dobi.aop.service.UserService;
+import com.dobi.aop.service.impl.UserServiceImpl;
+import com.dobi.aop.util.Logger;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -22,7 +22,7 @@ public class JavaProxyTest {
         userService.save();*/
 
 /*
-        //1 创建真实对象
+        //1 创建真实对象-----被代理对象
         UserService userService = new UserServiceImpl();
 
         //2. 创建代理对象
@@ -52,7 +52,7 @@ public class JavaProxyTest {
 
 
     public static UserService  getProxy(){
-        //1 创建真实对象
+        //1 创建真实对象----被代理对象
         UserService userService = new UserServiceImpl();
 
         //2. 创建代理对象

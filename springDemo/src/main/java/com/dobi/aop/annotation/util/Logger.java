@@ -1,4 +1,4 @@
-package com.dobi.proxy.util;
+package com.dobi.aop.annotation.util;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 
@@ -18,6 +18,7 @@ public class Logger {
     public void around(ProceedingJoinPoint joinPoint){
 
         try {
+            //
             log();
             joinPoint.proceed(); //调用了目标方法其实就相当于 xxx.save();
             log();

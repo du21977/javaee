@@ -1,8 +1,8 @@
-package com.dobi.proxy;
+package com.dobi.aop;
 
 
-import com.dobi.proxy.service.impl.ProductService;
-import com.dobi.proxy.util.Logger;
+import com.dobi.aop.service.impl.ProductService;
+import com.dobi.aop.util.Logger;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -28,10 +28,10 @@ public class CglibTest {
     //创建ProductService的代理
     public static ProductService getProxy(){
 
-        //1. 真实对象
+        //1. 真实对象 ---被代理对象
         ProductService ps = new ProductService();
 
-        //2. 创建代理
+        //2. 创建代理---代理对象
         Enhancer enhancer = new Enhancer();
 
         enhancer.setSuperclass(ProductService.class);
