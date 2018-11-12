@@ -1,8 +1,13 @@
 package com.dobi.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class User {
+/**
+ * @author 黑马程序员
+ * @Company http://www.ithiema.com
+ */
+public class User implements Serializable{
 
     private Integer id;
     private String username;
@@ -48,5 +53,16 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", birthday=" + birthday +
+                ", sex='" + sex + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }

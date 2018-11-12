@@ -23,6 +23,7 @@
       <module name="JsonDemo_main" target="1.8" />
       <module name="JsonDemo_test" target="1.8" />
       <module name="MybatisDemo" target="1.5" />
+      <module name="MyBatisDemo1" target="1.5" />
       <module name="MySqlDemo_main" target="1.8" />
       <module name="MySqlDemo_test" target="1.8" />
       <module name="RestFulDemo_main" target="1.8" />
