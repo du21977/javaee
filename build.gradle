@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    //SpringBoot依赖
+    //SpringBoot依赖--web
     compile("org.springframework.boot:spring-boot-starter-web:1.5.10.RELEASE")
 
     //mysql的连接驱动。

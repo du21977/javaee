@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MySqlDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/MySqlDemo.iml" group="MySqlDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MySqlDemo/MySqlDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MySqlDemo/MySqlDemo_main.iml" group="MySqlDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MySqlDemo/MySqlDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MySqlDemo/MySqlDemo_test.iml" group="MySqlDemo" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" filepath="$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" group="RestFulDemo" />
