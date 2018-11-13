@@ -14,10 +14,14 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo.iml" group="JsonDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_main.iml" group="JsonDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JsonDemo/JsonDemo_test.iml" group="JsonDemo" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisDemo2/MyBatisDemo2.iml" filepath="$PROJECT_DIR$/MyBatisDemo2/MyBatisDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisDemo3/MyBatisDemo3.iml" filepath="$PROJECT_DIR$/MyBatisDemo3/MyBatisDemo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisDemo4/MyBatisDemo4.iml" filepath="$PROJECT_DIR$/MyBatisDemo4/MyBatisDemo4.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MySqlDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/MySqlDemo.iml" group="MySqlDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MySqlDemo/MySqlDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MySqlDemo/MySqlDemo_main.iml" group="MySqlDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MySqlDemo/MySqlDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MySqlDemo/MySqlDemo_test.iml" group="MySqlDemo" />
       <module fileurl="file://$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" filepath="$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisDemo1/MybatisDemo1.iml" filepath="$PROJECT_DIR$/MybatisDemo1/MybatisDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" group="RestFulDemo" />

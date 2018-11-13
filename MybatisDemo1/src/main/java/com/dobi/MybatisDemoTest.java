@@ -7,11 +7,13 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-public class MybatisTest {
+/**
+ * xml加注解的方式，与纯xml相比，不需要map.xml了
+ */
+public class MybatisDemoTest {
 
     public static void main(String[] args) throws Exception {
 
