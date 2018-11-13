@@ -2,6 +2,7 @@ package com.dobi.dao;
 
 import com.dobi.domain.QueryVo;
 import com.dobi.domain.User;
+import com.dobi.domain.User1;
 
 import java.util.List;
 
@@ -65,4 +66,11 @@ public interface IUserDao {
      * @return
      */
     List<User> findByVo(QueryVo vo);
+
+
+    /**
+     * 查询所有操作
+     * @return
+     */
+    List<User1> findAllResulutMap();
 }

@@ -3,6 +3,7 @@ package com.dobi.test;
 import com.dobi.dao.IUserDao;
 import com.dobi.domain.QueryVo;
 import com.dobi.domain.User;
+import com.dobi.domain.User1;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -133,6 +134,9 @@ public class MyBatisDemo4Test {
         System.out.println(res);
     }
 
+    /**
+     * 通过对象进行查询
+     */
     @Test
     public void testFindByQueryVo() {
         QueryVo vo = new QueryVo();
@@ -144,6 +148,18 @@ public class MyBatisDemo4Test {
             System.out.println(u);
         }
     }
+
+    /**
+     * 利用resultMap解决实体类属性与数据库列表名不一致的问题
+     */
+    @Test
+    public void testFindAllResultMap() {
+        List<User1> users = userDao.findAllResulutMap();
+        for(User1 user : users) {
+            System.out.println(user);
+        }
+    }
+
 
 
 }

@@ -11,6 +11,7 @@
         <module name="MyBatisDemo2" />
         <module name="MyBatisDemo3" />
         <module name="MyBatisDemo4" />
+        <module name="MyBatisDemo5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,7 @@
       <module name="MyBatisDemo2" target="1.5" />
       <module name="MyBatisDemo3" target="1.5" />
       <module name="MyBatisDemo4" target="1.5" />
+      <module name="MyBatisDemo5" target="1.5" />
       <module name="MySqlDemo_main" target="1.8" />
       <module name="MySqlDemo_test" target="1.8" />
       <module name="RestFulDemo_main" target="1.8" />
