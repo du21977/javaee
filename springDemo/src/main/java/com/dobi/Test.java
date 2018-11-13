@@ -1,7 +1,6 @@
 package com.dobi;
 
 import com.dobi.service.UserService;
-import com.dobi.service.impl.UserServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

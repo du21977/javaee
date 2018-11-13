@@ -1,4 +1,4 @@
-package com.dobi.service.impl;
+package com.dobi.service;
 
 import com.dobi.service.UserService;
 

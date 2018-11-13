@@ -19,26 +19,26 @@
             scope="prototype"
     -->
     <!--xml的IOC控制反转-->
-    <bean id="us"  class="com.dobi.service.impl.UserServiceImpl" scope="singleton"></bean>
+    <bean id="us" class="com.dobi.service.UserServiceImpl" scope="singleton"></bean>
 
 
     <!--注解的IOC，扫描该包下所有类含有相应注解的类,然后创建实例-->
     <context:component-scan base-package="com.dobi"></context:component-scan>
 
     <!--xml的DI依赖注入，有参构造方式-->
-    <bean id="us_DI"  class="com.dobi.service.impl.UserServiceImplDI01" scope="singleton">
+    <bean id="us_DI" class="com.dobi.service.UserServiceImplDI01" scope="singleton">
         <!--通过这行配置，可以让Spring匹配有参构造，name:构造参数名称 value:要赋的值-->
         <constructor-arg name="address" value="广州"></constructor-arg>
     </bean>
 
     <!--xml的DI依赖注入，set方式-->
-    <bean id="us_DI_set"  class="com.dobi.service.impl.UserServiceImplDI02" scope="singleton">
+    <bean id="us_DI_set" class="com.dobi.service.UserServiceImplDI02" scope="singleton">
         <!--通过这行配置，可以让Spring匹配set，name:参数名称 value:要赋的值-->
         <property name="address" value="番禺"></property>
     </bean>
 
     <!--xml的DI依赖注入，set方式，赋值array数组-->
-    <bean id="us_DI_set_array"  class="com.dobi.service.impl.UserServiceImplDI03" scope="singleton">
+    <bean id="us_DI_set_array" class="com.dobi.service.UserServiceImplDI03" scope="singleton">
         <!--通过这行配置，可以让Spring匹配set，name:参数名称 value:要赋的值-->
         <property name="address" >
             <array>
@@ -52,7 +52,7 @@
     </bean>
 
     <!--xml的DI依赖注入，set方式，赋值list-->
-    <bean id="us_DI_set_list"  class="com.dobi.service.impl.UserServiceImplDI04" scope="singleton">
+    <bean id="us_DI_set_list" class="com.dobi.service.UserServiceImplDI04" scope="singleton">
         <!--通过这行配置，可以让Spring匹配set，name:参数名称 value:要赋的值-->
         <property name="address" >
             <list>
@@ -66,7 +66,7 @@
     </bean>
 
     <!--xml的DI依赖注入，set方式，赋值map-->
-    <bean id="us_DI_set_map"  class="com.dobi.service.impl.UserServiceImplDI05" scope="singleton">
+    <bean id="us_DI_set_map" class="com.dobi.service.UserServiceImplDI05" scope="singleton">
         <!--通过这行配置，可以让Spring匹配set，name:参数名称 value:要赋的值-->
         <property name="address" >
             <map>
@@ -85,7 +85,7 @@
 
     <!--对象类型的set注入，开发中最多的就是这种-->
     <bean id="userDaoImpl" class="com.dobi.dao.impl.UserDaoImpl"></bean>
-    <bean id="us_DI_set_object"  class="com.dobi.service.impl.UserServiceImplDI06" scope="singleton">
+    <bean id="us_DI_set_object" class="com.dobi.service.UserServiceImplDI06" scope="singleton">
 
         <!--ref对象，userDaoImpl在上面已经实例化了-->
         <property name="userDao" ref="userDaoImpl"></property>

@@ -26,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_main.iml" group="RestFulDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RestFulDemo/RestFulDemo_test.iml" group="RestFulDemo" />
+      <module fileurl="file://$PROJECT_DIR$/SSMDemo/SSMDemo.iml" filepath="$PROJECT_DIR$/SSMDemo/SSMDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/XmlDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/XmlDemo.iml" group="XmlDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/XmlDemo/XmlDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/XmlDemo/XmlDemo_main.iml" group="XmlDemo" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/XmlDemo/XmlDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/XmlDemo/XmlDemo_test.iml" group="XmlDemo" />
