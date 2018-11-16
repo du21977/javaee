@@ -3,3 +3,21 @@ IOC 与 DI
 IOC:控制反转，把对象创建交给Spring进行配置
 DI：依赖注入，在对象实例化的时候，给他里面的成员变量赋值
 关系：依赖注入不能单独存在，需要在IOC基础之上完成操作
+
+
+什么是Spring
+就是把每个bean与bean的关系全部交给spring来管理，整个对象的生命周期全部交给spring管理
+
+把很多框架集成起来，交给spring来管理
+
+
+spring 的生命周期
+prototype 多例，调用一次创建一次实例
+singleton 只创建一次
+request  http请求request作用域中使用
+seesion  http请求seesion作用域中使用
+
+spring创建对象的几种方式
+1.构造方法
+2.注解
+3.工厂----在配置文件中配置工厂类 ---工厂方法和静态工厂方法都可以

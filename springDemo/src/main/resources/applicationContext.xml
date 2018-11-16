@@ -18,7 +18,7 @@
         默认情况下spring生成的实例是单例的。如果想要做成多例：
             scope="prototype"
     -->
-    <!--xml的IOC控制反转-->
+    <!--xml的IOC控制反转,默认是无参构造-->
     <bean id="us" class="com.dobi.service.UserServiceImpl" scope="singleton"></bean>
 
 
