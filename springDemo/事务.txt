@@ -21,3 +21,26 @@ TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
 
 Spring事务传播行为
 事务嵌套，事务里面有事务，该怎么执行
+例如下面例子
+class LogService {
+    @Transactional（ROPAGATION_REQUIRED_NEW）
+    public void addLog();---调用数据库插入日志
+}
+ class UserService {
+   private LogService  logService ;
+   @Transactional(ROPAGATION_REQUIRED_NEW)
+   public void addServiceUser(){
+   logService.addLog();---
+   addUser()--往数据插入用户信息
+   int i =1/0;
+  }
+ }
+
+ ROPAGATION_REQUIRED  如果当前有事物,就用当前的事物,不会新增事物，而是加入到这个事务中。---默认
+ ROPAGATION_REQUIRED_NEW 如果当前有事物,不会加入当前事物,会新增事物,相当于各用各的事务
+
+ SUPPORTS:支持当前事务，如果当前没有事务，就以非事务方式执行（没有事务）
+ MANDATORY：使用当前的事务，如果当前没有事务，就抛出异常
+ NOT_SUPPORTED:以非事务方式执行操作，如果当前存在事务，就把当前事务挂起
+ NEVER:以非事务方式运行，如果当前存在事务，抛出异常
+ NESTED:如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行 REQUIRED 类似的操作
