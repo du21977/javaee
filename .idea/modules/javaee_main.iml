@@ -20,6 +20,8 @@
     <orderEntry type="library" name="Gradle: org.thymeleaf:thymeleaf-spring4:2.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: commons-dbutils:commons-dbutils:1.6" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:4.3.17.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jdbc:4.3.17.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:4.3.17.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: cglib:cglib:2.2.2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:1.5.10.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.5.10.RELEASE" level="project" />

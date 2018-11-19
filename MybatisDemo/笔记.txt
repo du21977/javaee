@@ -9,3 +9,26 @@
 		第四个：映射配置文件的mapper标签namespace属性的取值必须是dao接口的全限定类名
 		第五个：映射配置文件的操作配置（select），id属性的取值必须是dao接口的方法名
 当我们遵从了第三，四，五点之后，我们在开发中就无须再写dao的实现类,只写接口就行了。
+
+mybatis与hibernate的区别
+1.hibernate是通过对象得到sql语句
+2.mybatis是通过sql语句得到对象
+
+mybatis可以优化，属于轻量级
+hibernate属于重量级，不利于优化
+
+
+mybatis原理：
+1.首先 xml解析配置文件，此处是SqlMapConfig.xml,获取jdbc配置，创建数据源
+2.
+
+SQL注入
+通过拼接sql,非法拼接 OR 1=1
+#{} 可防止SQL注入，使用#表示使用?防注入
+${} 可SQL注入 ，使用$表示自己拼接，所以一般开发中尽量不使用
+
+怎么解决SQL注入先编译，再执行
+就是先检查是否有非法参数，然后再执行SQL语句
+
+
+根据数据库表，可以通过gernarate工具自动生成实体类和mapper.xml文件

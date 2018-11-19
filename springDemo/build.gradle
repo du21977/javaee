@@ -22,4 +22,12 @@ dependencies {
     // https://mvnrepository.com/artifact/com.alibaba/druid
     compile group: 'com.alibaba', name: 'druid', version: '1.1.6'
 
+    //Spring事务的依赖
+    compile 'org.springframework:spring-jdbc:4.3.17.RELEASE'
+    compile 'org.springframework:spring-tx:4.3.17.RELEASE'
+
+    compile 'org.springframework:spring-test:4.3.17.RELEASE'
+    //mysql的连接驱动。
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.17'
+
 }

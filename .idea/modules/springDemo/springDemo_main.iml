@@ -18,6 +18,10 @@
     <orderEntry type="library" name="Gradle: cglib:cglib:2.2.2" level="project" />
     <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.8.10" level="project" />
     <orderEntry type="library" name="Gradle: com.alibaba:druid:1.1.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jdbc:4.3.17.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:4.3.17.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-test:4.3.17.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.17" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aop:4.3.17.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:4.3.17.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-core:4.3.17.RELEASE" level="project" />
