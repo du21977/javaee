@@ -65,7 +65,9 @@ public class JavaProxyTest {
 
                         Logger.log();
                         System.out.println("动态代理拦截");
-                        return method.invoke( userService, args);
+                        Object result =  method.invoke( userService, args);
+                        Logger.log();
+                        return result;
                     }
                 }
         );

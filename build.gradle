@@ -36,6 +36,10 @@ dependencies {
     //cglib动态代理
     compile group: 'cglib', name: 'cglib', version: '2.2.2'
 
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.5.2'
+
+
 }
 
 //打jar包--右侧gradle-->Tasks-->other-->release双击
